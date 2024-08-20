@@ -1,2 +1,5 @@
 # ignore venv
 rdenv/
+
+# ignore pycache
+__pycache__/
