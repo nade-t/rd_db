@@ -1,4 +1,5 @@
 import init_db
+from skater import Skater
 
 def main():
      
@@ -8,6 +9,7 @@ def main():
      menu_choice = None
      while menu_choice != 5:
             # main menu to control program
+            print()
             print("---------------")
             print("MAIN MENU")
             print("---------------")
@@ -39,6 +41,10 @@ def main():
 def skater_menu():
     skater_menu_choice = None    
     while skater_menu_choice != 0:
+        print()
+        print("---------------")
+        print("SKATER MANAGEMENT")
+        print("---------------")
         print("0: Return to main menu")
         print("1: Add new skater (name/number only)")
         skater_menu_choice = input()
@@ -46,11 +52,15 @@ def skater_menu():
         if skater_menu_choice == "0":
             return
         elif skater_menu_choice == "1":
-            skater = Skater()
+            Skater()
 
 def game_menu():
     game_menu_choice = None    
     while game_menu_choice != 0:
+        print()
+        print("---------------")
+        print("GAME MANAGEMENT")
+        print("---------------")
         print("0: Return to main menu")
 
         game_menu_choice = input()
@@ -61,6 +71,10 @@ def game_menu():
 def gtsc_menu():
     gtsc_menu_choice = None    
     while gtsc_menu_choice != 0:
+        print()
+        print("---------------")
+        print("GTSC SCORING AND REPORTS")
+        print("---------------")
         print("0: Return to main menu")
 
         gtsc_menu_choice = input()
@@ -71,6 +85,7 @@ def gtsc_menu():
 def system_management():
     sys_choice = None    
     while sys_choice != 0:
+         print()
          print("---------------")
          print("SYSTEM MANAGEMENT")
          print("---------------")
